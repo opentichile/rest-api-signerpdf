@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: rest-api-signerpdf-service
+spec:
+  selector:
+    app: rest-api-signerpdf
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080

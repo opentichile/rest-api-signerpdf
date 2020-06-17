@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rest-api-signerpdf
+spec:
+  selector:
+    matchLabels:
+      app: rest-api-signerpdf
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rest-api-signerpdf
+    spec:
+      containers:
+      - name: rest-api-signerpdf
+        image: docker.io/63038688/rest-api-signerpdf:v1
+        ports:
+        - containerPort: 8080

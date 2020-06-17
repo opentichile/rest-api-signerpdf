@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rest-api-signerpdf
+spec:
+  containers:
+  - name: rest-api-signerpdf
+    image: docker.io/63038688/rest-api-signerpdf:v1
